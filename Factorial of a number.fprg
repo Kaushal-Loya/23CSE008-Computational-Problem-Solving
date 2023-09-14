@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Kaushal Loya"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-14 02:41:33 PM"/>
+        <attribute name="created" value="S2F1c2hhbCBMb3lhO0RFU0tUT1AtQk1NUUc0RDsyMDIzLTA5LTE0OzAxOjU5OjU3IFBNOzM1MTc="/>
+        <attribute name="edited" value="S2F1c2hhbCBMb3lhO0RFU0tUT1AtQk1NUUc0RDsyMDIzLTA5LTE0OzAyOjQxOjMzIFBNOzE7MzYxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Real" array="False" size=""/>
+            <declare name="product" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the number&quot;" newline="True"/>
+            <input variable="number"/>
+            <assign variable="product" expression="1"/>
+            <while expression="number!=0">
+                <assign variable="product" expression="product*number"/>
+                <assign variable="number" expression="number-1"/>
+            </while>
+            <output expression="product" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

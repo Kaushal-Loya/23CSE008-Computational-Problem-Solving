@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Kaushal Loya"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-14 03:24:10 PM"/>
+        <attribute name="created" value="S2F1c2hhbCBMb3lhO0RFU0tUT1AtQk1NUUc0RDsyMDIzLTA5LTE0OzAyOjU4OjU1IFBNOzM1MTU="/>
+        <attribute name="edited" value="S2F1c2hhbCBMb3lhO0RFU0tUT1AtQk1NUUc0RDsyMDIzLTA5LTE0OzAzOjI0OjEwIFBNOzI7MzYwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Subject1, Subject2, Subject3, Subject4" type="Real" array="False" size=""/>
+            <declare name="Average" type="Integer" array="False" size=""/>
+            <declare name="Result" type="String" array="False" size=""/>
+            <output expression="&quot;Enter you subject marks&quot;" newline="True"/>
+            <input variable="Subject1"/>
+            <input variable="Subject2"/>
+            <input variable="Subject3"/>
+            <input variable="Subject4"/>
+            <if expression="(Subject1&lt;101)&amp;&amp;(Subject2&lt;101)&amp;&amp;(Subject3&lt;101)&amp;&amp;(Subject4&lt;101)">
+                <then>
+                    <assign variable="Average" expression="(Subject1+Subject2+Subject3+Subject4)/4"/>
+                    <output expression="&quot;The average is &quot;&amp;Average" newline="True"/>
+                    <if expression="Average&gt;60">
+                        <then>
+                            <output expression="&quot;Pass&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Fail&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Cannot enter more than 100&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

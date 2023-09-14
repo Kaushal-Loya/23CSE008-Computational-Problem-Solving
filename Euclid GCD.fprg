@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.0">
+    <attributes>
+        <attribute name="name" value="Euclid's Algorithm"/>
+        <attribute name="authors" value="Euclid"/>
+        <attribute name="about" value="This ancient algorithm finds the greatest common demoninator between two integers. There are variations that exist - which make use modulus rather than an If Statement. This is the original version."/>
+        <attribute name="saved" value="9/8/2014 11:50:05 PM"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare variables="A" type="Integer"/>
+            <declare variables="B" type="Integer"/>
+            <output expression="&quot;Enter two numbers. This algorith will find the greatest common denominator.&quot;"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <while expression="not (B = 0)">
+                <if expression="A &gt; B">
+                    <then>
+                        <assign variable="A" expression="A - B"/>
+                    </then>
+                    <else>
+                        <assign variable="B" expression="B - A"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="A"/>
+        </body>
+    </function>
+</flowgorithm>
